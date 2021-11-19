@@ -6,7 +6,7 @@
 main {
   display: flex;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -16,6 +16,7 @@ main {
 h1 {
   display: flex;
   font-size: 82px ;
+  color: rgba(240, 248, 255, 0.813);
 }
 
 button {
@@ -34,4 +35,10 @@ p {
   font-size: 154px ;
   line-height: 169px;
   line-height: 100%;
+  color:rgba(240, 248, 255, 0.813);
+}
+
+section {
+  display: flex; 
+  justify-content: space-evenly;
 }
