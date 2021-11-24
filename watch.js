@@ -44,6 +44,21 @@ function timerCycle() {
       sec = 0;
       min = 0;
     }
+
+    if(sec < 10 || sec === 0) {
+      sec = '0' + sec;
+    }
+
+    if(min < 10 || min === 0) {
+      min = '0' + min;
+    }
+
+    if(hr < 10 || hr === 0) {
+      hr = '0' + hr;
+    }
+
+    watch.innerHTML = hr + ':' + min + ':' + sec;
+    setTimeout('timerCycle()', 1000);
   }
 }
 
@@ -55,4 +70,8 @@ function stopWatch() {
 
 function resetWatch() {
   watch.innerHTML = '00:00:00';
+  timer = true;
+  sec = 0;
+  min = 0;
+  hr = 0;
 }
