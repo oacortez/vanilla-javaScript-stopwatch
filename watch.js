@@ -7,7 +7,7 @@ var resetBtn = document.querySelector('#resetBtn');
 
 
 // event listeners:
-startBtn.addEventListener('click', startTimer);
+startBtn.addEventListener('click', startWatch);
 
 
 
@@ -44,5 +44,11 @@ function timerCycle() {
       sec = 0;
       min = 0;
     }
+  }
+}
+
+function stopWatch() {
+  if(timer === false) {
+    timer = true;
   }
 }
