@@ -19,6 +19,13 @@ let min = 0;
 let hr = 0;
 let timer = true;
 
+function startWatch() {
+  if(timer === true) {
+    timer = false;
+    timerCycle();
+  }
+}
+
 function timerCycle() {
   if(timer === false) {
     sec = parseInt(sec);
