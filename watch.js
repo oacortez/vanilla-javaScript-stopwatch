@@ -14,6 +14,28 @@ startBtn.addEventListener('click', startTimer);
 
 // functionality:
 
-function () {
+let sec = 0;
+let min = 0;
+let hr = 0;
+let timer = true;
 
+function timerCycle() {
+  if(timer === false) {
+    sec = parseInt(sec);
+    min = parseInt(min);
+    hr = parseInt(hr);
+
+    sec = sec + 1;
+
+    if(sec === 60) {
+      min = min + 1;
+      sec = 0;
+    }
+
+    if(min === 60) {
+      hr = hr + 1;
+      sec = 0;
+      min = 0;
+    }
+  }
 }
