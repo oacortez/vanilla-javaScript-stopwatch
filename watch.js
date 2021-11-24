@@ -8,8 +8,8 @@ const watch = document.querySelector('#timer');
 
 // event listeners:
 startBtn.addEventListener('click', startWatch);
-
-
+stopBtn.addEventListener('click', stopWatch);
+resetBtn.addEventListener('click', resetWatch);
 
 
 // functionality:
