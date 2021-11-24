@@ -1,8 +1,8 @@
 // Query Selectors:
-var startBtn = document.querySelector('#startBtn');
-var stopBtn = document.querySelector('#stopBtn');
-var resetBtn = document.querySelector('#resetBtn');
-
+const startBtn = document.querySelector('#startBtn');
+const stopBtn = document.querySelector('#stopBtn');
+const resetBtn = document.querySelector('#resetBtn');
+const watch = document.querySelector('#timer');
 
 
 
@@ -51,4 +51,8 @@ function stopWatch() {
   if(timer === false) {
     timer = true;
   }
+}
+
+function resetWatch() {
+  watch.innerHTML = '00:00:00';
 }
